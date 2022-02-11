@@ -1,0 +1,39 @@
+/*
+flickr.com :- classplus
+
+Done! Here's the API key and secret for your new app:
+
+Key:
+72f59f373774da4d4764a85ce03bf3fc
+
+Secret:
+7f5245723d55f580
+
+*/
+
+// https://api.flickr.com/services/rest/?format=json&method=flickr.photos.search&api_key=72f59f373774da4d4764a85ce03bf3fc&tags={SEARCH_TERM}&format=json&nojsoncallback=?
+// https://api.flickr.com/services/rest/?format=json&method=flickr.photos.getRecent&api_key=72f59f373774da4d4764a85ce03bf3fc
+let r = {
+  photos: {
+    page: 1,
+    pages: 1786,
+    perpage: 100,
+    total: 178569,
+    photo: [
+      {
+        id: "51872366997",
+        owner: "191164054@N06",
+        secret: "c3b3ac8649",
+        server: "65535",
+        farm: 66,
+        title: "Fruits",
+        ispublic: 1,
+        isfriend: 0,
+        isfamily: 0,
+      },
+    ],
+  },
+};
+
+//http://farm{farm-id}.staticflickr.com/{server-id}/{id}_{secret}.jpg
+// => http://farm66.staticflickr.com/65535/51872366997_c3b3ac8649.jpg
